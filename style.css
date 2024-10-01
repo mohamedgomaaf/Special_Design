@@ -192,7 +192,11 @@ li {
 .landing-page .active {
   color: var(--main-color);
 }
-
+@media (max-width: 428px) {
+  .header-area {
+    font-size: 15px;
+  }
+}
 /* End Landing-page */
 /* Start About Us */
 .about-us {
