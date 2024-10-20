@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,70.4,673;1,70.4,673&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/fontawesome-free-6.2.0-web/css/all.css" />
+  <title>Landing Page</title>
+</head>
+
+<body>
+  <!-- Start settings box -->
+  <div class="settings-box w-25">
+    <div class="toggle">
+      <i class="fa-solid fa-gear"></i>
+    </div>
+    <div class="setting-container">
+      <div class="option-box">
+        <h4 class="pb-2 pt-2">Colors</h4>
+        <ul class="colors-list m-0 p-0">
+          <li data-color="#ff9800" class="active"></li>
+          <li data-color="#e91e63"></li>
+          <li data-color="#03a9f4"></li>
+          <li data-color="#4caf50"></li>
+        </ul>
+      </div>
+      <div class="option-box pb-2">
+        <h4 class="fs-6 pb-2 pt-2">Random Backgrounds</h4>
+        <div class="random-background">
+          <span class="mb-2 mb-md-0 btn btn-primary active yes" data-background="yes">Yes</span>
+          <span class="btn btn-primary no" data-background="no">NO</span>
+        </div>
+      </div>
+      <div class="option-box pb-2">
+        <h4 class="fs-5 pb-2 pt-2">Show Bullets</h4>
+        <div class="bullets-option">
+          <span class="mb-2 mb-md-0 btn btn-primary active yes" data-display="show">Yes</span>
+          <span class="btn btn-primary no" data-display="hide">NO</span>
+        </div>
+      </div>
+      <div class="reset-option btn btn-danger w-100">Reset Option</div>
+    </div>
+  </div>
+  <!-- End settings box -->
+  <!-- Start Nav-bullets -->
+  <div class="nav-bullets">
+    <div class="bullet" data-section=".about-us">
+      <div class="tooltip-1">About Us</div>
+    </div>
+    <div class="bullet" data-section=".skills">
+      <div class="tooltip-1">Our Skills</div>
+    </div>
+    <div class="bullet" data-section=".gallery">
+      <div class="tooltip-1">Our Gallery</div>
+    </div>
+    <div class="bullet" data-section=".timeline">
+      <div class="tooltip-1">Timeline</div>
+    </div>
+    <div class="bullet" data-section=".features">
+      <div class="tooltip-1">Features</div>
+    </div>
+    <div class="bullet" data-section=".testimonials">
+      <div class="tooltip-1">Testimonials</div>
+    </div>
+  </div>
+  <!-- End Nav-bullets -->
+  <!-- Start Landing-page -->
+  <div class="landing-page text-light">
+    <!-- <div class="overlay"></div> -->
+    <div class="header-area d-flex fs-7 flex-wrap justify-content-around align-items-center p-3">
+      <div class="logo fw-bold fs-6">Special Design</div>
+      <ul class="d-flex list-unstyled">
+        <li class=""><a href="" data-section=".about-us">About</a></li>
+        <li class=""><a href="" data-section=".skills">Skills</a></li>
+        <li class=""><a href="" data-section=".gallery">Gallery</a></li>
+        <li class=""><a href="" data-section=".timeline">Timeline</a></li>
+        <li class=""><a href="" data-section=".features">Features</a></li>
+        <li class=""><a href="" data-section=".testimonials">Testimonials</a></li>
+      </ul>
+    </div>
+    <div class="itro_text text-center position-absolute top-50 start-50 translate-middle">
+      <h1>We Are <span class="active">Creative</span> Agency</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quaerat
+        eaque cumque beatae quae eveniet
+      </p>
+    </div>
+  </div>
+  <!-- End Landing-page -->
+  <!-- Start About Us -->
+  <div class="about-us">
+    <div class="container">
+      <div class="row d-flex justify-content-between">
+        <div class="col-lg-6 col-md-12 mb-4">
+          <div class="info-box">
+            <h1 class="text-center text-md-start">About Us</h1>
+            <p class="pt-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Ducimus, fuga labore, eaque aspernatur exercitationem officiis
+              possimus hic ipsum nostrum, omnis rerum aliquid minus accusamus
+              error ab deserunt non quibusdam quis vel magnam. Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Ducimus, fuga
+              labore, eaque aspernatur exercitationem officiis possimus hic
+              ipsum nostrum, omnis rerum aliquid minus accusamus error ab
+              deserunt non quibusdam quis vel magnam.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <div class="image-box">
+            <img class="img-fluid" src="imgs/about_top_img.svg" alt="About Us Image" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End About Us -->
+  <!-- Start Our Skills  -->
+  <div class="skills mt-5 mb-5">
+    <div class="container pt-5 pb-5">
+      <h1 class="text-center mb-5">Our Skills</h1>
+
+      <div class="skill-box bg-light d-flex p-3 mb-3">
+        <div class="name">HTML</div>
+        <div class="skill-progress">
+          <span data-progress="95%"></span>
+        </div>
+      </div>
+
+      <div class="skill-box bg-light d-flex p-3 mb-3">
+        <div class="name">CSS</div>
+        <div class="skill-progress">
+          <span data-progress="93%"></span>
+        </div>
+      </div>
+
+      <div class="skill-box bg-light d-flex p-3 mb-3">
+        <div class="name">JavaScript</div>
+        <div class="skill-progress">
+          <span data-progress="88%"></span>
+        </div>
+      </div>
+
+      <div class="skill-box bg-light d-flex p-3 mb-3">
+        <div class="name">React</div>
+        <div class="skill-progress">
+          <span data-progress="50%"></span>
+        </div>
+      </div>
+      <div class="skill-box bg-light d-flex p-3 mb-3">
+        <div class="name">Bootstrap</div>
+        <div class="skill-progress">
+          <span data-progress="70%"></span>
+        </div>
+      </div>
+      <div class="skill-box bg-light d-flex p-3 mb-3">
+        <div class="name">Typescript</div>
+        <div class="skill-progress">
+          <span data-progress="20%"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Our Skills  -->
+  <!-- Start Gallery -->
+  <div class="gallery">
+    <div class="container pt-5 pb-5">
+      <h1 class="text-center mb-5">Our Gallery</h1>
+      <div class="images-box text-center">
+        <img src="imgs/1.jpg" alt="Image One" />
+        <img src="imgs/2.jpg" alt="Image Two" />
+        <img src="imgs/3.jpg" alt="Image Three" />
+        <img src="imgs/4.jpg" alt="Image Four" />
+        <img src="imgs/5.jpg" alt="Image Five" />
+        <img src="imgs/6.jpg" alt="" />
+        <img src="imgs/7.jpg" alt="" />
+        <img src="imgs/8.jpg" alt="" />
+        <img src="imgs/9.jpg" alt="" />
+        <img src="imgs/10.jpg" alt="" />
+      </div>
+    </div>
+  </div>
+  <!-- End Gallery -->
+  <!-- Start Timeline -->
+  <div class="timeline pt-5 pb-5">
+    <div class="container">
+      <div class="timeline-content">
+        <div class="year">2024</div>
+        <div class="left">
+          <div class="content">
+            <h3>Testing Heading</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Officia, doloribus!Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Officia, doloribus! Officia, doloribus!Lorem
+              ipsum, dolor sit amet consectetur adipisicing elit. Officia,
+              doloribus!
+            </p>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="right">
+          <div class="content">
+            <h3>Testing Heading</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Officia, doloribus!Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Officia, doloribus! Officia, doloribus!Lorem
+              ipsum, dolor sit amet consectetur adipisicing elit. Officia,
+              doloribus!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Timeline -->
+  <!-- Start Features -->
+  <div class="features">
+    <h1 class="text-center mb-5 mt-5">Our Features</h1>
+    <div class="container">
+      <div class="row">
+        <div class="feat-box col-lg-4 col-md-6 text-center">
+          <img class="img-fluid" src="imgs/icon-1.png" alt="" />
+          <h4 class="">Development</h4>
+          <p class="mt-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
+            omnis impedit ullam molestiae eum ut?
+          </p>
+        </div>
+        <div class="feat-box col-lg-4 col-md-6 text-center">
+          <img class="img-fluid" src="imgs/icon-2.png" alt="" />
+          <h4 class="">Development</h4>
+          <p class="mt-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
+            omnis impedit ullam molestiae eum ut?
+          </p>
+        </div>
+        <div class="feat-box col-lg-4 col-md-6 text-center">
+          <img class="img-fluid" src="imgs/icon-3.png" alt="" />
+          <h4 class="">Development</h4>
+          <p class="mt-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
+            omnis impedit ullam molestiae eum ut?
+          </p>
+        </div>
+        <div class="feat-box col-lg-4 col-md-6 text-center">
+          <img class="img-fluid" src="imgs/icon-4.png" alt="" />
+          <h4 class="">Development</h4>
+          <p class="mt-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
+            omnis impedit ullam molestiae eum ut?
+          </p>
+        </div>
+        <div class="feat-box col-lg-4 col-md-6 text-center">
+          <img class="img-fluid" src="imgs/icon-5.png" alt="" />
+          <h4 class="">Development</h4>
+          <p class="mt-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
+            omnis impedit ullam molestiae eum ut?
+          </p>
+        </div>
+        <div class="feat-box col-lg-4 col-md-6 text-center">
+          <img class="img-fluid" src="imgs/icon-6.png" alt="" />
+          <h4 class="">Development</h4>
+          <p class="mt-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
+            omnis impedit ullam molestiae eum ut?
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Features -->
+  <!-- Start Testimonials -->
+  <div class="testimonials">
+    <div class="container pt-4">
+      <h3 class="mb-4 text-light">Testimonials</h3>
+      <div class="row g-4">
+        <div class="ts-box col-12 col-md-12 col-lg-4">
+          <div class="card">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, ad.</p>
+            <div class="person-info">
+              <div class="row">
+                <img class="img-fluid col-5" src="imgs/2.jpg" alt="">
+                <div class="col-7">
+                  <h4>Mohamed Gomaa</h4>
+                  <p>Front End Developer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ts-box col-12 col-md-12 col-lg-4">
+          <div class="card">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, ad.</p>
+            <div class="person-info">
+              <div class="row">
+                <img class="img-fluid col-5" src="imgs/2.jpg" alt="">
+                <div class="col-7">
+                  <h4>Mohamed Gomaa</h4>
+                  <p>Front End Developer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ts-box col-12 col-md-12 col-lg-4">
+          <div class="card">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, ad.</p>
+            <div class="person-info">
+              <div class="row">
+                <img class="img-fluid col-5" src="imgs/2.jpg" alt="">
+                <div class="col-7">
+                  <h4>Mohamed Gomaa</h4>
+                  <p>Front End Developer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Emd Testimonials -->
+  <!-- Start Contact US -->
+  <div class="contact align-content-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <h1 class="text-center">Contact US</h1>
+      <form action="">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-5">
+            <input class="form-control" type="text" placeholder="Your Name" name="username">
+            <input class="form-control" type="text" placeholder="Your Phone" name="phone">
+            <input class="form-control" type="email" placeholder="Your Email" name="email">
+            <input class="form-control" type="text" placeholder="Subject" name="subject">
+          </div>
+          <div class="col-12 col-md-5">
+            <textarea class="d-block w-100 form-control" name="message" placeholder="Your Message"></textarea>
+            <button class="btn btn-primary w-100">Send</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- End Contact US -->
+  <!-- start footer -->
+  <div class="footer text-center pt-3 pb-3">Created By <span>Mohamed Gomaa</span> | All Rights Reserved</div>
+  <!-- end footer -->
+  <script src="main.js"></script>
+  <script src="/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
